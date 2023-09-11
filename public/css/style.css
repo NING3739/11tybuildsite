@@ -265,6 +265,10 @@ body {
   font-weight: bold;
 }
 
+.project-lists li p {
+  margin-bottom: 20px;
+}
+
 .works-current {
   flex: 1;
   height: auto;
@@ -970,4 +974,85 @@ p a:hover {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* article back to top */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 7.5%;
+  padding: 10px;
+  border-radius: 50%;
+  transition: opacity 0.3s ease-in-out;
+  text-decoration: none;
+  color: #e10f0f;
+}
+
+#back-to-top i {
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+#back-to-top:hover i {
+  color: #275b0e;
+}
+
+@media (max-width: 1279px) {
+  #back-to-top {
+    display: none !important;
+  }
+}
+
+/* share-link */
+#share-buttons {
+  display: flex;
+  justify-content: start;
+  height: 8vh;
+  align-items: first baseline;
+  margin: 30px 40px 70px 40px;
+}
+
+#share-buttons i {
+  font-size: 20px;
+  margin: 10px;
+}
+
+#share-buttons h3 {
+  color: #275b0e;
+}
+
+.twitter {
+  color: #55acee;
+}
+
+.reddit {
+  color: #cb2027;
+}
+
+.whatsapp {
+  color: #25d366;
+}
+
+.telegram {
+  color: #229ed9;
+}
+
+.weibo {
+  color: #e6162d;
+}
+
+.twitter,
+.reddit,
+.whatsapp,
+.telegram,
+.weibo {
+  opacity: 0.6;
+}
+
+.twitter:hover,
+.reddit:hover,
+.whatsapp:hover,
+.telegram:hover,
+.weibo:hover {
+  opacity: 0.9;
 }

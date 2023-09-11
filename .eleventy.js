@@ -2,10 +2,9 @@ const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   // Add Passthrough Copy
-  eleventyConfig.addPassthroughCopy("./src/css");
-  eleventyConfig.addPassthroughCopy("./src/assets");
-  eleventyConfig.addPassthroughCopy("./src/js/theme-toggle.js");
-  eleventyConfig.addPassthroughCopy("./src/js/paginate.js");
+  eleventyConfig.addPassthroughCopy("./src/css/");
+  eleventyConfig.addPassthroughCopy("./src/assets/");
+  eleventyConfig.addPassthroughCopy("./src/js/");
 
   // Add Global Data
   eleventyConfig.addGlobalData("pageFavicons", {
@@ -17,7 +16,7 @@ module.exports = function (eleventyConfig) {
     "/archive/": "/assets/image/favicon/archive.svg",
   });
 
-  // Add Filter
+  // Add Filters
   eleventyConfig.addFilter("postDate", (dataObj) => {
     return DateTime.fromJSDate(dataObj).toLocaleString(DateTime.DATE_MED);
   });

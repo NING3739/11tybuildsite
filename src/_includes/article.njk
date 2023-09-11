@@ -3,14 +3,37 @@ layout: 'base.njk'
 ---
 
 <article class="article">
-  <div>
-    <h1 class="article-title">
-      {{ title }}
-    </h1>
-    <h4 class="article-date">
-      <i>{{ date | postDate }}</i>
-    </h4>
-    {{ content | safe }}
-  </div>
+  <h1 class="article-title">{{ title }}</h1>
+  <h4 class="article-date">
+    <i>{{ date | postDate }}</i>
+  </h4>
+  {{ content | safe }}
 </article>
+<!-- Share Links -->
+<div id="share-buttons">
+  <h3>
+    <strong>Share<i class="fa-solid fa-bullhorn"></i>:</strong>
+  </h3>
+  <a class="twitter" target="_blank">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a class="reddit" target="_blank">
+    <i class="fab fa-reddit"></i>
+  </a>
+  <a class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a class="telegram" target="_blank">
+    <i class="fab fa-telegram"></i>
+  </a>
+  <a class="weibo" target="_blank">
+    <i class="fab fa-weibo"></i>
+  </a>
+</div>
+<script src="/js/share-link.js"></script>
+<!-- Back to Top Button -->
+<a href="#top" id="back-to-top">
+  <i class="fa-solid fa-circle-chevron-up fa-2xl"></i>
+</a>
+<script src="/js/back-top.js"></script>
 <hr>
