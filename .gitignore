@@ -1,0 +1,14 @@
+# dependencies installed by npm
+node_modules
+
+# macOS related files
+.DS_Store
+
+# viscose related files
+.vscode
+
+# firebase related files
+.firebase
+.firebaserc
+firebase.json
+

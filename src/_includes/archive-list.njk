@@ -1,0 +1,26 @@
+<div class="archive">
+  <div class="archive-list">
+    <div class="archive-project-list">
+      <h2>Projects</h2>
+      <ol>
+        {%- for project in collections.project | reverse -%}
+          <li>
+            <a href="{{ project.url }}">
+              {{ project.data.title }}, {{ project.date | extractYear }}</a>
+          </li>
+        {%- endfor %}
+      </ol>
+    </div>
+    <div class="archive-blog-list">
+      <h2>Posts</h2>
+      <ol>
+        {%- for post in collections.post | reverse -%}
+          <li>
+            <a href="{{ post.url }}">
+              {{ post.data.title }}, {{ post.date | extractYear }}</a>
+          </li>
+        {%- endfor %}
+      </ol>
+    </div>
+  </div>
+</div>

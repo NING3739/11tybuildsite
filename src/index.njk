@@ -1,0 +1,19 @@
+---
+title: NING
+layout: 'base.njk'
+description: ningli's profile
+---
+
+{% include 'banner.njk' %}
+<hr>
+  <section class="blogs">
+    <h1>Featured blogs</h1>
+    <div class="blogs-card">
+      {% for post in collections.featured | reverse %}
+        <div class="card">
+          <img loading="lazy" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"/>
+          <a href="{{ post.url }}">Learning log, {{ post.date | postDate }}</a>
+          <p>{{ post.data.description }}</p>
+        </div>
+      {% endfor %}
+    </section>

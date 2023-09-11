@@ -1,0 +1,87 @@
+<footer class="footer-container">
+  <div class="footer-left">
+    <div class="footer-left-upper">
+      <h2 class="left-upper-title">Navgation</h2>
+      <ul class="left-upper-items">
+        <li>
+          <a href="/">
+            <strong>Home</strong>
+          </a>
+        </li>
+        <li>
+          <a href="/project">
+            <strong>Projects</strong>
+          </a>
+        </li>
+        <li>
+          <a href="/blog">
+            <strong>Blogs</strong>
+          </a>
+        </li>
+        <li>
+          <a href="/photos">
+            <strong>Photos</strong>
+          </a>
+        </li>
+        <li>
+          <a href="/info">
+            <strong>Info</strong>
+          </a>
+        </li>
+        <li>
+          <a href="/archive">
+            <strong>Archive</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-left-lower">Box 3</div>
+  </div>
+  <div class="footer-middle">
+    <h2 class="middle-footer-title">Contact</h2>
+    <p class="middle-footer-email">
+      <a href="mailto:ln729500172@outlook.com">ln729500172@outlook.com</a>
+    </p>
+    <div class="contact-icons">
+      <a href="https://github.com/NING3739" class="icon-link">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://twitter.com/ningli3739" class="icon-link">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://mastodon.social/@ningli3739" class="icon-link">
+        <i class="fab fa-mastodon"></i>
+      </a>
+      <a href="https://instagram.com" class="icon-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer-right">
+    <div class="footer-right-upper">Box 1</div>
+    <div class="footer-right-lower">
+      <h2 class="right-lower-title">Sit Info</h2>
+      <p class="right-lower-copyright">
+        &copy;<span id="currentYear"></span>
+        <a href="/info">
+          <strong>NING LI</strong>
+        </a>. Engined by
+        <a href="https://www.11ty.dev/">
+          <strong>Eleventy</strong>
+        </a>, <br/>and deployed on
+        <a href="https://firebase.google.com/">
+          <strong>Firebase</strong>
+        </a>.
+      </p>
+      <h2 class="right-lower-title">Theme</h2>
+      <div class="color-mode-buttons">
+        <button class="color-mode-button" id="auto">Auto</button>
+        <button class="color-mode-button" id="light">Light</button>
+        <button class="color-mode-button" id="dark">Dark</button>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>

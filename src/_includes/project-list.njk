@@ -1,0 +1,24 @@
+{%- for project in collections.project | reverse -%}
+  <div class="project-container">
+    <div class="projects-description">
+      <h2>
+        {{ project.data.title }}
+      </h2>
+      <h4>{{ project.date | postDate }}</h4>
+      <i>{{ project.data.tags }}</i>
+      <p>
+        {{ project.data.description }}
+      </p>
+      <p>
+        <i class="fab fa-github"></i>
+        <a href="{{ project.data.github }}">Github&nbsp;repo</a>
+      </p>
+      <p>
+        <i class="fa-solid fa-feather-pointed"></i>
+        <a href="{{ project.url }}">Notes</a>
+      </p>
+    </div>
+    <div class="projects-image">
+      <img loading="lazy" src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}"></div>
+    </div>
+  {%- endfor %}

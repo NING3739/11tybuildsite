@@ -1,0 +1,16 @@
+---
+layout: 'base.njk'
+---
+
+<article class="article">
+  <div>
+    <h1 class="article-title">
+      {{ title }}
+    </h1>
+    <h4 class="article-date">
+      <i>{{ date | postDate }}</i>
+    </h4>
+    {{ content | safe }}
+  </div>
+</article>
+<hr>

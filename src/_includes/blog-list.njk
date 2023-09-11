@@ -1,0 +1,16 @@
+<section class="blogs">
+  <div class="blogs-card" id="blog-list">
+    {%- for post in collections.post | reverse -%}
+      <div class="card">
+        <img loading="lazy" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"/>
+        <a href="{{ post.url }}">Learning log, {{ post.date | postDate }}</a>
+        <p>{{ post.data.description }}</p>
+      </div>
+    {%- endfor %}
+  </div>
+  <!-- 分页链接容器 -->
+  <div
+    class="pagination" id="pagination-links"><!-- 分页链接将在此处动态生成 -->
+  </div>
+</section>
+<script src="/js/paginate.js"></script>
