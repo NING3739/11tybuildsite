@@ -4,28 +4,49 @@ document.addEventListener("DOMContentLoaded", function () {
   const darkButton = document.getElementById("dark");
   const root = document.documentElement;
 
+  function setTheme(theme) {
+    const linkElement = document.getElementById("theme-link");
+    linkElement.setAttribute(
+      "href",
+      theme === "light" ? "/css/light.css" : "/css/dark.css"
+    );
+  }
+
+  function applyStyles(
+    backgroundImage,
+    backgroundSize,
+    autoButtonStyles,
+    lightButtonStyles,
+    darkButtonStyles
+  ) {
+    root.style.backgroundImage = backgroundImage;
+    root.style.backgroundSize = backgroundSize; // 设置 background-size
+    autoButton.style.backgroundColor = autoButtonStyles.backgroundColor;
+    autoButton.style.color = autoButtonStyles.color;
+    lightButton.style.backgroundColor = lightButtonStyles.backgroundColor;
+    lightButton.style.color = lightButtonStyles.color;
+    darkButton.style.backgroundColor = darkButtonStyles.backgroundColor;
+    darkButton.style.color = darkButtonStyles.color;
+  }
+
   function applyLightModeStyles() {
-    root.style.backgroundImage = "url('/assets/image/light.svg')";
-    root.style.backgroundRepeat = "repeat";
-    root.style.backgroundSize = "4px 4px";
-    autoButton.style.backgroundColor = "#d1dab3";
-    autoButton.style.color = "black";
-    lightButton.style.backgroundColor = "#d1dab3";
-    lightButton.style.color = "black";
-    darkButton.style.backgroundColor = "";
-    darkButton.style.color = "";
+    applyStyles(
+      "url('/assets/image/light.svg')",
+      "4px 4px",
+      { backgroundColor: "#d1dab3", color: "black" },
+      { backgroundColor: "#d1dab3", color: "black" },
+      { backgroundColor: "", color: "" }
+    );
   }
 
   function applyDarkModeStyles() {
-    root.style.backgroundImage = "url('/assets/image/dark.svg')";
-    root.style.backgroundRepeat = "repeat";
-    root.style.backgroundSize = "4px 4px";
-    autoButton.style.backgroundColor = "black";
-    autoButton.style.color = "white";
-    lightButton.style.backgroundColor = "";
-    lightButton.style.color = "";
-    darkButton.style.backgroundColor = "black";
-    darkButton.style.color = "white";
+    applyStyles(
+      "url('/assets/image/dark.svg')",
+      "4px 4px",
+      { backgroundColor: "black", color: "white" },
+      { backgroundColor: "", color: "" },
+      { backgroundColor: "black", color: "white" }
+    );
   }
 
   function applyAutoModeStyles() {
@@ -34,8 +55,10 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
 
     if (systemDarkMode) {
+      setTheme("dark");
       applyDarkModeStyles();
     } else {
+      setTheme("light");
       applyLightModeStyles();
     }
   }
@@ -43,14 +66,17 @@ document.addEventListener("DOMContentLoaded", function () {
   applyAutoModeStyles(); // 初始化根据系统模式应用样式
 
   autoButton.addEventListener("click", () => {
+    setTheme("auto");
     applyAutoModeStyles(); // 点击 "auto" 按钮后重新应用样式，跟随系统模式
   });
 
   lightButton.addEventListener("click", () => {
+    setTheme("light");
     applyLightModeStyles();
   });
 
   darkButton.addEventListener("click", () => {
+    setTheme("dark");
     applyDarkModeStyles();
   });
 

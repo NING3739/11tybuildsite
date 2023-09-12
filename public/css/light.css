@@ -1019,6 +1019,7 @@ p a:hover {
 
 #share-buttons h3 {
   color: #275b0e;
+  text-transform: uppercase;
 }
 
 .twitter {

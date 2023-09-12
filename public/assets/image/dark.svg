@@ -2,6 +2,6 @@
 <mask id="path-1-inside-1_6_2" fill="white">
 <path d="M0 0H20V20H0V0Z"/>
 </mask>
-<path d="M0 0H20V20H0V0Z" fill="#6B828E"/>
-<path d="M20 0H21V-1H20V0ZM0 1H20V-1H0V1ZM19 0V20H21V0H19Z" fill="#4CAA34" mask="url(#path-1-inside-1_6_2)"/>
+<path d="M0 0H20V20H0V0Z" fill="#22284c"/>
+<path d="M20 0H21V-1H20V0ZM0 1H20V-1H0V1ZM19 0V20H21V0H19Z" fill="#255b0c" mask="url(#path-1-inside-1_6_2)"/>
 </svg>
