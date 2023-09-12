@@ -4,7 +4,7 @@
       Hey there! I'am Ning, a passionate web developer and data science enthusiast! Proficient in HTML5, CSS3, JavaScript
       and
       <a href="https://www.r-project.org/">R</a>. I am currently diving deep into the worlds of data visualisation and
-                                statical modeling.
+                statical modeling.
     </p>
     <p>
       But that's not all-I've got a thrilling mission: I am crafting an amazing note-taking mobile app, set to launch later
@@ -19,7 +19,9 @@
   <div class="works">
     <div class="works-project">
       <ul class="project-lists">
-        <h1>🧰 Projects</h1>
+        <h1>
+          <i class="fa-solid fa-briefcase" style="color: #07bb25;"></i>
+          Projects</h1>
         <li>
           {%- set count = 0 -%}
           {%- for project in collections.project | reverse -%}
@@ -32,7 +34,7 @@
             {%- endif -%}
           {%- endfor %}
           <p>
-            <i class="fa-solid fa-angles-right" style="color:#f28831;"></i>
+            <i class="fa-solid fa-angles-right" style="color:#a16399;"></i>
             <a href="/project">
               More Projects</a>
           </p>
@@ -41,13 +43,15 @@
     </div>
     <div class="works-current">
       <ul class="current-list">
-        <h1>🔴 Now</h1>
+        <h1>
+          <i class="fa-solid fa-circle-play" style="color: #ff0000;"></i>
+          Now</h1>
         <li>
           Helping improve developer productivity and collaboration on Netlify
         </li>
         <li>
           Scheming about our garden this spring Working my way through a list of blog post
-                                        ideas
+                    ideas
         </li>
         <li>Running a small monthly writing group</li>
         <li>

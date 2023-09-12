@@ -2,6 +2,8 @@
 title: Stats-R
 date: 2021-05-09
 tags: ["quarto, css3"]
+image: https://plus.unsplash.com/premium_photo-1677706562818-8ca69b7ce2c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80
+imageAlt: Stats-R
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
 github: https://github.com/NING3739
 ---

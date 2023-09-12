@@ -518,7 +518,7 @@ p a:hover {
 }
 
 .fab.fa-instagram {
-  color: #c7c0c2;
+  color: #c93232;
 }
 
 .fab.fa-github:hover,
@@ -715,6 +715,10 @@ p a:hover {
 .projects-description {
   flex: 1;
   padding: 20px;
+}
+
+.projects-description .fab.fa-github {
+  color: #cac7c7;
 }
 
 .projects-description h4 {
@@ -1011,7 +1015,7 @@ p a:hover {
   border-radius: 50%;
   transition: opacity 0.3s ease-in-out;
   text-decoration: none;
-  color: #3a43a2;
+  color: #4477ce;
 }
 
 #back-to-top i {
@@ -1020,7 +1024,7 @@ p a:hover {
 }
 
 #back-to-top:hover i {
-  color: #cac7c7;
+  color: #9db2bf;
 }
 
 @media (max-width: 1279px) {
