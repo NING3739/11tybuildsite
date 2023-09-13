@@ -2,7 +2,7 @@
 title: My Fourth Article
 author: Kevin Powell
 date: 2021-06-01
-tags: 
+categories:
   - google
 image: /assets/image/blog/article-4.jpg
 imageAlt: This is a test

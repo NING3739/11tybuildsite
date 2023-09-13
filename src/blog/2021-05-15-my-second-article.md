@@ -3,6 +3,8 @@ title: My Second Article
 author: Kevin Powell
 date: 2021-05-15
 tags:
+  - featured
+categories:
   - python
   - featured
 image: /assets/image/blog/article-2.jpg

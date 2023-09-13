@@ -2,7 +2,7 @@
 title: My First Article
 author: Kevin Powell
 date: 2021-12-01
-tags:
+categories:
   - post
 image: /assets/image/blog/article-1.jpg
 imageAlt: This is a test
