@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
   // Add Passthrough Copy
@@ -24,6 +25,9 @@ module.exports = function (eleventyConfig) {
     const date = new Date(dateString);
     return date.getFullYear().toString();
   });
+
+  // SyntaxHighlight
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     dir: {
