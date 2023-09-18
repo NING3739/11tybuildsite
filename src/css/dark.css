@@ -291,7 +291,7 @@ hr {
   border: 1px solid #507def;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 429px) {
   .works {
     display: grid;
     background-color: #83a4e729;
