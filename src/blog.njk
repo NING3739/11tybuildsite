@@ -13,3 +13,14 @@ description: I blog about the web platform, web design and development, accessib
   </div>
   {% include 'blog-list.njk' %}
   <hr>
+    <!-- categories list -->
+    <div class="categories">
+      <h3>Categories:</h3>
+      <ul>
+        {% for category in collections.categories %}
+          <li>
+            <a href="/blog/{{ category.slug }}">{{ category.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>

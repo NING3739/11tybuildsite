@@ -1,12 +1,13 @@
 ---
-title: My Third Article
+title: My Second Article
 author: Kevin Powell
 date: 2021-05-28
-tags: 
+tags:
   - featured
 categories:
   - python
-  - R
+  - r
+  - html
 image: /assets/image/blog/article-3.jpg
 imageAlt: This is a test
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?

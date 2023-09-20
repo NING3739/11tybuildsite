@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const dynamicCategories = require("eleventy-plugin-dynamic-categories");
 
 module.exports = function (eleventyConfig) {
   // Add Passthrough Copy
@@ -28,6 +29,15 @@ module.exports = function (eleventyConfig) {
 
   // SyntaxHighlight
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  // eleventy-plugin-dynamic-categories
+  eleventyConfig.addPlugin(dynamicCategories, {
+    categoryVar: "categories", // Name of your category variable from your frontmatter (default: categories)
+    itemsCollection: "post", // Name of your collection to use for the items (default: posts)
+    categoryCollection: "categories", // Name of the new collection to use for the categories (default: value in categoryVar)
+    // categoryCollection MUST be unique currently
+    perPageCount: 5, // Number of items to display per page of categoriesByPage (default: 5)
+  });
 
   return {
     dir: {

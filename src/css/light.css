@@ -666,6 +666,39 @@ p a:hover {
   color: #000;
 }
 
+.categories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+
+.categories ul {
+  list-style: none; /* 移除列表样式 */
+  padding: 0; /* 可选，去掉默认的内边距 */
+  margin-left: 10px; /* 可选，去掉默认的外边距 */
+  display: flex;
+  flex-wrap: wrap; /* 可选，如果希望在宽度不足时换行 */
+}
+
+.categories ul li {
+  margin-right: 10px; /* 可选，添加间距 */
+}
+
+/* categories Media Queries */
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+  }
+
+  .categories h3 {
+    margin-bottom: 20px;
+  }
+}
+
 /* Article */
 .article {
   margin: 30px 40px 70px 40px;
@@ -686,6 +719,28 @@ p a:hover {
   display: flex;
   margin-bottom: 30px;
   justify-content: center;
+}
+
+.article-date {
+  display: flex;
+  align-items: center;
+}
+
+.article-date i {
+  margin-right: 10px;
+}
+
+.article-date ul {
+  list-style: none;
+  padding: 0; /* 可选，去掉默认的内边距 */
+  margin: 0; /* 可选，去掉默认的外边距 */
+  display: flex;
+  flex-wrap: wrap; /* 可选，如果希望在宽度不足时换行 */
+}
+
+.article-date ul li {
+  margin-right: 10px; /* 可选，添加间距 */
+  text-transform: lowercase; /* 可选，将文本转换为大写 */
 }
 
 /* Project Container */
@@ -1056,4 +1111,47 @@ p a:hover {
 .telegram:hover,
 .weibo:hover {
   opacity: 0.9;
+}
+
+/* blog-category */
+.blog-category {
+  display: grid;
+  padding: 20px;
+  margin: 40px 0 40px 0;
+}
+
+.blog-category-title {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-category-list {
+  padding: 20px;
+  text-transform: lowercase;
+  height: 100vh;
+  margin: 30px;
+  padding: 30px;
+  background-color: #f3d9e7;
+  border-radius: 34% 60% 42% 72%/71% 40% 60% 40%;
+}
+
+.blog-category-list li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog-category-list i {
+  text-transform: capitalize;
+}
+
+/* blog category Media Queries */
+@media (max-width: 768px) {
+  .blog-category-title {
+    font-size: x-large;
+  }
+
+  .blog-category-list li {
+    justify-content: space-between;
+  }
 }
