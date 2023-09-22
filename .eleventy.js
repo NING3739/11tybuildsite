@@ -14,7 +14,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("faviconify", function (pageUrl) {
     // First, check if it's the root page
     if (pageUrl === "/") return _favicon("homepage");
-
     // Next, check if it's a subpage
     if (pageUrl.startsWith("/project/")) return _favicon("project");
     if (pageUrl.startsWith("/blog/")) return _favicon("blog");
