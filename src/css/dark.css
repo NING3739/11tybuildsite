@@ -1165,6 +1165,7 @@ p a:hover {
   display: flex;
   justify-content: center;
   color: #cac7c7;
+  font-family: "Oswald", sans-serif;
 }
 
 .blog-category-list {
@@ -1178,7 +1179,7 @@ p a:hover {
 }
 
 .blog-category-list li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
 }

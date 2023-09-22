@@ -5,7 +5,6 @@ description: I blog about the web platform, web design and development, accessib
     I also have a monthly “Learning Log” practice, where I collect articles I’m reading or things I’m learning.
 ---
 
-<style></style>
 <div class="blog-title">
   <h1>
     <img src="/assets/image/favicon/project.svg" alt="favicon">
@@ -14,3 +13,14 @@ description: I blog about the web platform, web design and development, accessib
   </div>
   {% include 'project-list.njk' %}
   <hr>
+    <!-- categories list -->
+    <div class="categories">
+      <h3>Categories:</h3>
+      <ul>
+        {% for category in collections.projectcategories %}
+          <li>
+            <a href="/project/{{ category.slug }}">{{ category.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>

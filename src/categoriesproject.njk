@@ -1,0 +1,22 @@
+---
+layout: base.njk
+permalink: /project/{{ category.slug }}/
+pagination:
+  data: collections.projectcategories
+  size: 1
+  alias: category
+eleventyComputed: 
+  title: Project entries with "{{ category.title }}" category
+---
+
+<div class="blog-category">
+  <h1 class="blog-category-title">{{ title }}</h1>
+  <ol class="blog-category-list">
+    {% for project in category.projects | reverse %}
+      <li>
+        <a href="{{ project.url }}">{{ project.data.title }}</a>
+        <i>{{ project.date | postDate }}</i>
+      </li>
+    {% endfor %}
+  </ol>
+</div>

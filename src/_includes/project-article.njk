@@ -6,6 +6,13 @@ layout: 'base.njk'
   <h1 class="article-title">{{ title }}</h1>
   <h4 class="article-date">
     <i>{{ date | postDate }}</i>
+    <ul>
+      {% for categories in categories %}
+        <li>
+          <a href="/project/{{ categories | slugify }}">{{ categories }}</a>
+        </li>
+      {% endfor %}
+    </ul>
   </h4>
   {{ content | safe }}
 </article>

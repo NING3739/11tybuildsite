@@ -32,11 +32,17 @@ module.exports = function (eleventyConfig) {
 
   // eleventy-plugin-dynamic-categories
   eleventyConfig.addPlugin(dynamicCategories, {
-    categoryVar: "categories", // Name of your category variable from your frontmatter (default: categories)
-    itemsCollection: "post", // Name of your collection to use for the items (default: posts)
-    categoryCollection: "categories", // Name of the new collection to use for the categories (default: value in categoryVar)
-    // categoryCollection MUST be unique currently
-    perPageCount: 5, // Number of items to display per page of categoriesByPage (default: 5)
+    categoryVar: "categories",
+    itemsCollection: "post",
+    categoryCollection: "categories",
+    perPageCount: 5,
+  });
+
+  eleventyConfig.addPlugin(dynamicCategories, {
+    categoryVar: "categories",
+    itemsCollection: "project",
+    categoryCollection: "projectcategories",
+    perPageCount: 5,
   });
 
   return {
