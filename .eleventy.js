@@ -15,25 +15,15 @@ module.exports = function (eleventyConfig) {
     // First, check if it's the root page
     if (pageUrl === "/") return _favicon("homepage");
 
-    // Next, check if it's a subpage under "project"
+    // Next, check if it's a subpage
     if (pageUrl.startsWith("/project/")) return _favicon("project");
-
-    // Next, check if it's a subpage under "blog"
     if (pageUrl.startsWith("/blog/")) return _favicon("blog");
-
-    // Next, check if it's a subpage under "photos"
     if (pageUrl.startsWith("/photos/")) return _favicon("photo");
-
-    // Next, check if it's a subpage under "info"
     if (pageUrl.startsWith("/info/")) return _favicon("info");
-
-    // Next, check if it's a subpage under "archive"
     if (pageUrl.startsWith("/archive/")) return _favicon("archive");
-
-    // Add condition checks for other pages as needed, and return the corresponding icon
-
-    return _favicon("homepage"); // Default icon, modify as needed
+    return _favicon("homepage"); // Default icon
   });
+
   // filter for date
   eleventyConfig.addFilter("postDate", (dataObj) => {
     return DateTime.fromJSDate(dataObj).toLocaleString(DateTime.DATE_MED);

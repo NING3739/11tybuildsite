@@ -12,3 +12,6 @@ node_modules
 .firebaserc
 firebase.json
 
+# rendered site files
+.public
+
