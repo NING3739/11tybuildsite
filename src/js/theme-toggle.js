@@ -4,9 +4,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const darkButton = document.getElementById("dark");
   const root = document.documentElement;
 
+  // 创建一个link元素来加载global.css
+  const globalLinkElement = document.createElement("link");
+  globalLinkElement.setAttribute("rel", "stylesheet");
+  globalLinkElement.setAttribute("type", "text/css");
+  globalLinkElement.setAttribute("id", "global-link");
+  globalLinkElement.setAttribute("href", "/css/global.css");
+  document.head.appendChild(globalLinkElement);
+
   function setTheme(theme) {
-    const linkElement = document.getElementById("theme-link");
-    linkElement.setAttribute(
+    const themeLinkElement = document.getElementById("theme-link");
+
+    // 根据主题模式设置link的href
+    themeLinkElement.setAttribute(
       "href",
       theme === "light" ? "/css/light.css" : "/css/dark.css"
     );
@@ -20,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     darkButtonStyles
   ) {
     root.style.backgroundImage = backgroundImage;
-    root.style.backgroundSize = backgroundSize; // 设置 background-size
+    root.style.backgroundSize = backgroundSize;
     autoButton.style.backgroundColor = autoButtonStyles.backgroundColor;
     autoButton.style.color = autoButtonStyles.color;
     lightButton.style.backgroundColor = lightButtonStyles.backgroundColor;
