@@ -1,7 +1,7 @@
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const dynamicCategories = require("eleventy-plugin-dynamic-categories");
-const _favicon = (icon) => `/assets/image/favicon/${icon}.svg`;
+const _favicon = (icon) => `/assets/favicon/${icon}.svg`;
 
 module.exports = function (eleventyConfig) {
   // Add Passthrough Copy
