@@ -1023,6 +1023,16 @@ p a:hover {
   font-family: "AlimamaAgileVF-Thin";
 }
 
+.archive-project-list h2,
+.archive-blog-list h2 {
+  margin-bottom: 20px;
+}
+
+.archive-project-list li,
+.archive-blog-list li {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 400px) {
   .archive-list {
     display: grid;
@@ -1137,6 +1147,8 @@ p a:hover {
 }
 
 .blog-category-list li {
+  font-weight: bold;
+  font-family: "AlimamaAgileVF-Thin";
   margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
