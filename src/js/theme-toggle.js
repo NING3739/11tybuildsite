@@ -12,10 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
   globalLinkElement.setAttribute("href", "/css/global.css");
   document.head.appendChild(globalLinkElement);
 
-  function setTheme(theme) {
-    const themeLinkElement = document.getElementById("theme-link");
+  // 创建link元素用于加载主题CSS文件
+  const themeLinkElement = document.createElement("link");
+  themeLinkElement.setAttribute("rel", "stylesheet");
+  themeLinkElement.setAttribute("type", "text/css");
+  themeLinkElement.setAttribute("id", "theme-link");
+  document.head.appendChild(themeLinkElement);
 
-    // 根据主题模式设置link的href
+  // 从本地存储中获取之前保存的主题选择
+  const savedTheme = localStorage.getItem("theme");
+
+  function setTheme(theme) {
     themeLinkElement.setAttribute(
       "href",
       theme === "light" ? "/css/light.css" : "/css/dark.css"
@@ -76,16 +83,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // 从本地存储中获取之前保存的主题选择
-  const savedTheme = localStorage.getItem("theme");
+  // 初始化时根据系统模式应用样式
+  applyAutoModeStyles();
+
+  // 如果之前有保存的主题选择，使用它
   if (savedTheme) {
     setTheme(savedTheme);
     if (savedTheme === "light") {
       applyLightModeStyles();
     } else if (savedTheme === "dark") {
       applyDarkModeStyles();
-    } else {
-      applyAutoModeStyles();
     }
   } else {
     // 如果没有保存的主题选择，应用自动模式
