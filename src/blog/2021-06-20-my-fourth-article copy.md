@@ -1,5 +1,5 @@
 ---
-title: My sixth Article
+title: My Sixth Article
 author: Kevin Powell
 date: 2021-06-20
 categories:

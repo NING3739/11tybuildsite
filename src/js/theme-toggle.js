@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "href",
       theme === "light" ? "/css/light.css" : "/css/dark.css"
     );
+
+    // 将主题选择保存到本地存储
+    localStorage.setItem("theme", theme);
   }
 
   function applyStyles(
@@ -73,11 +76,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  applyAutoModeStyles(); // 初始化根据系统模式应用样式
+  // 从本地存储中获取之前保存的主题选择
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    setTheme(savedTheme);
+    if (savedTheme === "light") {
+      applyLightModeStyles();
+    } else if (savedTheme === "dark") {
+      applyDarkModeStyles();
+    } else {
+      applyAutoModeStyles();
+    }
+  } else {
+    // 如果没有保存的主题选择，应用自动模式
+    applyAutoModeStyles();
+  }
 
   autoButton.addEventListener("click", () => {
     setTheme("auto");
-    applyAutoModeStyles(); // 点击 "auto" 按钮后重新应用样式，跟随系统模式
+    applyAutoModeStyles();
   });
 
   lightButton.addEventListener("click", () => {
@@ -93,6 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", (event) => {
-      applyAutoModeStyles(); // 监听系统模式变化并重新应用样式
+      applyAutoModeStyles();
     });
 });
