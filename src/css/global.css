@@ -251,6 +251,10 @@ body {
   padding-right: 40px;
 }
 
+.current-list li {
+  margin-bottom: 10px;
+}
+
 li::marker {
   font-size: 1rem;
   font-weight: bolder;
