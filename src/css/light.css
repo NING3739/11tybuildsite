@@ -149,6 +149,23 @@ p a:hover {
   color: #c7c0c2;
 }
 
+/* Footer Media Queries */
+@media screen and (max-width: 801px) {
+  .footer-left-lower,
+  .footer-right-upper {
+    display: none;
+  }
+
+  .footer-left-upper {
+    background-color: #f2ece9;
+  }
+
+  .footer-right-lower {
+    background-color: #c7c0c2;
+    border-bottom: 30px solid #c7c0c2;
+  }
+}
+
 /* Blog Title */
 .blog-title p {
   background-color: #f3d9e7;

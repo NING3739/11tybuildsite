@@ -158,6 +158,31 @@ p a:hover {
   color: #c93232;
 }
 
+/* Footer Media Queries */
+@media screen and (max-width: 801px) {
+  .footer-left-lower,
+  .footer-right-upper {
+    display: none;
+  }
+
+  .footer-left-upper {
+    background-color: #22284c;
+  }
+
+  .left-upper-title {
+    color: #d1dab3;
+  }
+
+  .left-upper-items a {
+    color: #47ab18;
+  }
+
+  .footer-right-lower {
+    background-color: #9db2bf;
+    border-bottom: 30px solid #9db2bf;
+  }
+}
+
 /* Blog Title */
 
 .blog-title h1 {

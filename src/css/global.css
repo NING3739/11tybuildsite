@@ -515,6 +515,10 @@ p a {
     margin-bottom: 10px;
   }
 
+  .footer-left-upper {
+    padding: 50px 0 40px 0;
+  }
+
   .footer-middle {
     order: 1;
   }
