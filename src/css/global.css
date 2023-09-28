@@ -433,6 +433,10 @@ p a {
   text-decoration: none;
 }
 
+.middle-footer-email a:hover {
+  background-color: #47ab18;
+}
+
 .middle-footer-title {
   font-family: "AlimamaAgileVF-Thin";
 }
@@ -759,6 +763,11 @@ p a {
   width: 100%;
   height: auto;
   display: block;
+  transition: border-radius 200ms ease-in;
+}
+
+.photo-container img:hover {
+  border-radius: 35px 0 35px 0;
 }
 
 .photo-info {
@@ -804,10 +813,15 @@ p a {
 }
 
 .profile-photo img {
-  width: 500px;
-  height: 500px;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+  width: 490px;
+  height: auto;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 50%);
+  border-radius: 34% 60% 42% 72%/71% 40% 60% 40%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.profile-photo img:hover {
+  transform: scale(0.95);
 }
 
 .profile-photo p {
