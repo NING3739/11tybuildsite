@@ -988,7 +988,7 @@ p a {
   justify-content: start;
   height: 8vh;
   align-items: first baseline;
-  margin: 30px 40px 70px 40px;
+  margin: 30px 40px 0 40px;
 }
 
 #share-buttons i {
@@ -1083,7 +1083,7 @@ p a {
 
 /* Giscus Commenting System */
 .giscus {
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
   margin-bottom: 60px;
 }
