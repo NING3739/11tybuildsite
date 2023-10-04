@@ -1080,3 +1080,10 @@ p a {
     justify-content: space-between;
   }
 }
+
+/* Giscus Commenting System */
+.giscus {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}

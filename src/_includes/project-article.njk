@@ -17,33 +17,9 @@ layout: 'base.njk'
   {{ content | safe }}
 </article>
 <!-- Share Links -->
-<div id="share-buttons">
-  <h3>
-    <strong>Share<i class="fa-solid fa-bullhorn"></i>:</strong>
-  </h3>
-  <a class="twitter" target="_blank">
-    <i class="fab fa-twitter"></i>
-  </a>
-  <a class="reddit" target="_blank">
-    <i class="fab fa-reddit"></i>
-  </a>
-  <a class="whatsapp" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <a class="telegram" target="_blank">
-    <i class="fab fa-telegram"></i>
-  </a>
-  <a class="weibo" target="_blank">
-    <i class="fab fa-weibo"></i>
-  </a>
-</div>
-<script src="/js/share-link.js"></script>
+{% include 'share-link.njk' %}
 <!-- Back to Top Button -->
-<a href="#top" id="back-to-top">
-  <i class="fa-solid fa-circle-chevron-up fa-2xl"></i>
-</a>
-<script src="/js/back-top.js"></script>
+{% include 'back-to-top.njk' %}
 <hr>
-  <!-- Hyvor Commenting System -->
-  <script async="async" src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
-  <hyvor-talk-comments website-id="9602" page-id=""></hyvor-talk-comments>
+  <!--Giscus Commenting System -->
+  {% include 'comment-system.njk' %}
