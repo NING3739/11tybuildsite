@@ -667,6 +667,22 @@ p a {
   text-transform: lowercase; /* 可选，将文本转换为大写 */
 }
 
+/* iframe */
+iframe {
+  display: block;
+  width: 560px;
+  height: 315px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  iframe {
+    width: 100%;
+  }
+}
+
 /* Project Container */
 .project-container {
   display: flex;

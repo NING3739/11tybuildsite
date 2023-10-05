@@ -1,17 +1,20 @@
 ---
-title: My Second Article
-author: Kevin Powell
-date: 2021-05-28
+title: FLASK Python Tutorial
+author: NING LI
+date: 2023-10-05
 tags:
   - featured
 categories:
+  - flask
   - python
-  - r
+  - css
   - html
-image: /assets/image/blog/article-3.jpg
-imageAlt: This is a test
+image: https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F6Dqa9T8XOOC95yJb0z9jew%2Fce4932b8d23046f260510e24c1ec39e1%2Fthumbnail.png&w=1920&q=75&dpl=dpl_2Kb9YiuAparKc71U7BxyAtH9LLYP
+imageAlt: flask logo
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
 ---
+
+<iframe src="https://www.youtube-nocookie.com/embed/l9u_vm9aAmM?si=b6hZvE0UfzJzLctX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum facilisis leo vel fringilla. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Ut sem nulla pharetra diam sit amet nisl. Est velit egestas dui id ornare. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Ut sem viverra aliquet eget. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. At augue eget arcu dictum. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Amet aliquam id diam maecenas ultricies mi.
 
