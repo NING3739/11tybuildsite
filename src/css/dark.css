@@ -330,3 +330,14 @@ p a:hover {
 .blog-category-list i {
   color: #cac7c7;
 }
+
+/* hobby */
+.hobby-title,
+.hobby h3,
+.hobby p {
+  color: #cac7c7;
+}
+
+.hobby a {
+  color: #47ab18;
+}
