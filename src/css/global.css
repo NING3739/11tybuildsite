@@ -601,15 +601,16 @@ p a {
 }
 
 .categories ul {
-  list-style: none; /* 移除列表样式 */
-  padding: 0; /* 可选，去掉默认的内边距 */
-  margin-left: 10px; /* 可选，去掉默认的外边距 */
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
   display: flex;
-  flex-wrap: wrap; /* 可选，如果希望在宽度不足时换行 */
+  flex-wrap: wrap;
 }
 
 .categories ul li {
-  margin-right: 10px; /* 可选，添加间距 */
+  margin-right: 10px;
+  text-transform: capitalize;
 }
 
 /* categories Media Queries */
@@ -656,15 +657,15 @@ p a {
 
 .article-date ul {
   list-style: none;
-  padding: 0; /* 可选，去掉默认的内边距 */
-  margin: 0; /* 可选，去掉默认的外边距 */
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-wrap: wrap; /* 可选，如果希望在宽度不足时换行 */
+  flex-wrap: wrap;
 }
 
 .article-date ul li {
-  margin-right: 10px; /* 可选，添加间距 */
-  text-transform: lowercase; /* 可选，将文本转换为大写 */
+  margin-right: 10px;
+  text-transform: capitalize;
 }
 
 /* iframe */
@@ -1016,7 +1017,7 @@ iframe {
   margin-bottom: 20px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 900px) {
   .archive-list {
     display: grid;
     flex-direction: column;
@@ -1115,7 +1116,7 @@ iframe {
 
 .blog-category-list {
   padding: 20px;
-  text-transform: lowercase;
+  text-transform: capitalize;
   height: 100vh;
   margin: 30px;
   padding: 30px;

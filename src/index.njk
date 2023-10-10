@@ -11,7 +11,7 @@ description: ningli's profile
     <div class="blogs-card">
       {% for post in collections.featured | reverse %}
         <div class="card">
-          <img loading="lazy" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"/>
+          <a href="{{ post.url }}"><img loading="lazy" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"/> </a>
           <a href="{{ post.url }}">Learning log, {{ post.date | postDate }}</a>
           <p>{{ post.data.description }}</p>
         </div>

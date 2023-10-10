@@ -19,6 +19,8 @@
       </p>
     </div>
     <div class="projects-image">
-      <img loading="lazy" src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}"></div>
+      <a href="{{ project.url }}">
+        <img loading="lazy" src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}"></div>
+      </a>
     </div>
   {%- endfor %}
