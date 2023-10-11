@@ -1,3 +1,164 @@
-{
-  "tags": "photos"
-}
+[
+  {
+    "date": "2019-02-25",
+    "categories": ["Auckland"],
+    "image": "src/assets/image/photo/2019-02-25-Auckland-min.jpeg",
+    "imageAlt": "Auckland",
+    "location": "Auckland"
+  },
+
+  {
+    "date": "2019-07-11",
+    "categories": ["Ngongotaha"],
+    "image": "src/assets/image/photo/2019-07-11-Ngongotaha-min.jpeg",
+    "imageAlt": "Ngongotaha",
+    "location": "Ngongotaha"
+  },
+
+  {
+    "date": "2019-07-13",
+    "categories": ["Waiotapu"],
+    "image": "src/assets/image/photo/2019-07-13-Waiotapu-min.jpeg",
+    "imageAlt": "Waiotapu",
+    "location": "Waiotapu"
+  },
+
+  {
+
+    "date": "2019-07-14",
+    "categories": ["Taupo"],
+    "image": "src/assets/image/photo/2019-07-14-Taupo-min.jpeg", 
+    "imageAlt": "Taupo",
+    "location": "Taupo"
+  },
+
+  {
+    "date": "2019-08-21",
+    "categories": ["Auckland"],
+    "image": "src/assets/image/photo/2020-08-21-Auckland-min.jpeg",
+    "imageAlt": "Auckland",
+    "location": "Auckland"
+  },
+
+  {
+    "date": "2020-09-19",
+    "categories": ["Auckland"],
+    "image": "src/assets/image/photo/2020-09-19-Auckland-min.jpg",
+    "imageAlt": "Auckland",
+    "location": "Auckland"
+  },
+
+  {
+    "date": "2020-09-20",
+    "categories": ["Auckland"],
+    "image": "src/assets/image/photo/2020-09-20-Auckland-min.jpg",
+    "imageAlt": "Auckland",
+    "location": "Auckland"
+  },
+
+  {
+    "date": "2020-12-25",
+    "categories": ["Kitekite Falls"],
+    "image": "src/assets/image/photo/2020-12-25-Kitekite-Falls-min.jpeg",
+    "imageAlt": "Kitekite Falls",
+    "location": "Kitekite Falls"
+  },
+
+  {
+    "date": "2020-12-28",
+    "categories": ["Hamilton"],
+    "image": "src/assets/image/photo/2020-12-28-Hamilton-min.jpeg",
+    "imageAlt": "Hamilton",
+    "location": "Hamilton"
+  },
+
+  {
+    "date": "2021-01-08",
+    "categories": ["Hunua"],
+    "image": "src/assets/image/photo/2021-01-08-Hunua-min.jpeg",
+    "imageAlt": "Hunua",
+    "location": "Hunua"
+  },
+
+  {
+    "date": "2021-03-31",
+    "categories": ["Muriwai"],
+    "image": "src/assets/image/photo/2021-03-31-Muriwai-min.jpeg",
+    "imageAlt": "Muriwai",
+    "location": "Muriwai"
+  },
+
+  {
+    "date": "2021-10-25",
+    "categories": ["Piha"],
+    "image": "src/assets/image/photo/2021-10-25-Piha-min.jpeg",
+    "imageAlt": "Piha",
+    "location": "Piha"
+  },
+
+  {
+    "date": "2021-12-05",
+    "categories": ["Albert Eden"],
+    "image": "src/assets/image/photo/2021-12-05-Albert-Eden-min.jpeg",
+    "imageAlt": "Albert Eden",
+    "location": "Albert Eden"
+  },
+
+  {
+    "date": "2022-01-03",
+    "categories": ["Waipu"],  
+    "image": "src/assets/image/photo/2022-01-03-Waipu-min.jpeg",
+    "imageAlt": "Waipu",
+    "location": "Waipu"
+  },
+
+  {
+    "date": "2022-01-20",
+    "categories": ["Cornwall Park"],
+    "image": "src/assets/image/photo/2022-01-20-Cornwall-Park-min.jpeg",
+    "imageAlt": "Cornwall Park",
+    "location": "Cornwall Park"
+  },
+
+  {
+    "date": "2022-01-22",
+    "categories": ["Huna"],
+    "image": "src/assets/image/photo/2022-01-22-Huna-min.jpeg",
+    "imageAlt": "Huna",
+    "location": "Huna"
+  },
+
+  {
+    "date": "2022-01-27",
+    "categories": ["Whangarei"],
+    "image": "src/assets/image/photo/2022-01-27-Whangarei-min.jpeg",
+    "imageAlt": "Whangarei",
+    "location": "Whangarei"
+  },
+
+  {
+    "date": "2022-01-31",
+    "categories": ["Shakespear Regional Park"],
+    "image": "src/assets/image/photo/2022-01-31-Shakespear-Regional-Park-min.jpeg",
+    "imageAlt": "Shakespearb Regional Park",
+    "location": "Shakespear Regional Park"
+  },
+
+  {
+    "date": "2022-03-15",
+    "categories": ["Whitianga"],
+    "image": "src/assets/image/photo/2022-03-15-1-Whitianga-min.jpeg",
+    "imageAlt": "Whitianga",
+    "location": "Whitianga"
+  },
+
+  {
+    "date": "2022-03-15",
+    "categories": ["Whanganu"],
+    "image": "src/assets/image/photo/2022-03-15-Whanganui-min.jpeg",
+    "imageAlt": "Whanganui",
+    "location": "Whanganu"
+  }
+
+]
+

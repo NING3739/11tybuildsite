@@ -6,7 +6,7 @@ pagination:
   size: 1
   alias: category
 eleventyComputed: 
-  title: Blog entries with "{{ category.title }}" category
+  title: Blog entries with "{{ category.title | capitalize }}" category
 ---
 
 <div class="blog-category">

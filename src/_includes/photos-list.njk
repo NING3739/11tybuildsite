@@ -2,16 +2,16 @@
   {%- for photo in collections.photos | reverse -%}
     <div class="masonry-item">
       <div class="photo-container">
-        <img loading="lazy" src="{{ photo.data.image }}" alt="{{ photo.data.imageAlt }}">
-          <div class="photo-info">
-            <p>
-              <i class="fa-solid fa-location-dot"></i>
-              &nbsp;{{ photo.data.location }}</p>
-            <p>
-              <i class="fa-regular fa-calendar-days"></i>
-              &nbsp;{{ photo.date | postDate }}</p>
-          </div>
+        {%- image photo.image, photo.imageAlt, {class: "img"} %}
+        <div class="photo-info">
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            &nbsp;{{ photo.location }}</p>
+          <p>
+            <i class="fa-regular fa-calendar-days"></i>
+            &nbsp;{{ photo.date | formatDate }}</p>
         </div>
       </div>
-    {%- endfor %}
-  </div>
+    </div>
+  {%- endfor %}
+</div>

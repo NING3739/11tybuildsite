@@ -19,7 +19,7 @@ description: I blog about the web platform, web design and development, accessib
       <ul>
         {% for category in collections.projectcategories %}
           <li>
-            <a href="/project/{{ category.slug }}">{{ category.title }}</a>
+            <a href="/project/{{ category.slug }}">{{ category.title | capitalize }}</a>
           </li>
         {% endfor %}
       </ul>
