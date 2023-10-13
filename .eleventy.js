@@ -1,6 +1,5 @@
 // Importing required modules
 const { DateTime } = require("luxon");
-const markdownIt = require("markdown-it");
 const Image = require("@11ty/eleventy-img");
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -135,13 +134,18 @@ module.exports = function (eleventyConfig) {
     });
 
     // Setting Markdown library with custom options
-    let options = {
-        html: true,
-        breaks: true,
-        linkify: true,
-        quotes: "“”‘’",
-    };
-    eleventyConfig.setLibrary("md", markdownIt(options));
+    const markdownIt = require('markdown-it');
+    const markdownItAttrs = require('markdown-it-attrs');
+    const markdownItAnchor = require('markdown-it-anchor');
+    const markdownItEasyTables = require('markdown-it-easy-tables');
+    const markdownItMultimdTable = require('markdown-it-multimd-table');
+    const markdownItOptions = { html: true, breaks: true, linkify: true };
+    const markdownLib = markdownIt(markdownItOptions)
+      .use(markdownItAttrs)
+      .use(markdownItAnchor)
+      .use(markdownItEasyTables)
+      .use(markdownItMultimdTable);
+    eleventyConfig.setLibrary('md', markdownLib);
 
     // Adding Mermaid plugin with custom configurations
     eleventyConfig.addPlugin(pluginMermaid, {
