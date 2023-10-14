@@ -62,7 +62,7 @@ A personal portfolio build by Eleventy
    │  ├─ 11tybuildsite.md
    │  ├─ project.json
    │  ├─ astrobuildsite.md
-   │  └─ datalabzone.md
+   │  └─ quartobuildwebsite.md
    └─ project.njk
 
 ```

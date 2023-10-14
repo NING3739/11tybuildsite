@@ -1,12 +1,12 @@
 ---
-title: Data Lab Zone
+title: Quarto Build Website
 date: 2023-04-14
 categories:
   - html
   - css
   - quarto
 image: https://posit.co/wp-content/uploads/2022/10/thumbnail-2.jpg
-imageAlt: Data Lab Zone
+imageAlt: Quarto
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
 github: https://github.com/NING3739/datalabzone
 ---
