@@ -17,7 +17,7 @@ body {
 }
 
 .name a {
-  color: #efe1d1;
+  color: #f2f2f2;
 }
 
 .item {
@@ -49,7 +49,7 @@ body {
 }
 
 .banner-text {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .banner-text a {
@@ -62,7 +62,7 @@ body {
 
 /* Work Section */
 .works {
-  color: #cac7c7;
+  color: #f8f8f2;
   background-color: #83a4e729;
 }
 
@@ -82,7 +82,7 @@ hr {
 
 /* Blog heading */
 .blogs h1 {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .card a {
@@ -90,7 +90,7 @@ hr {
 }
 
 .card p {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 /* Footer */
@@ -131,11 +131,11 @@ p a:hover {
 
 .middle-footer-title,
 .middle-footer-email {
-  color: white;
+  color: #f8f8f2;
 }
 
 .middle-footer-email a {
-  color: white;
+  color: #f8f8f2;
 }
 
 .fab.fa-github {
@@ -182,28 +182,28 @@ p a:hover {
 /* Blog Title */
 
 .blog-title h1 {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .blog-title p {
-  color: #cac7c7;
+  color: #f8f8f2;
   background-color: #2051ab;
 }
 
 .blog-title p a {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .blog-title p a:hover {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .blog-title p a:visited {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .categories h3 {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .categories a {
@@ -212,7 +212,7 @@ p a:hover {
 
 /* Article */
 .article {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .article-date a {
@@ -220,12 +220,12 @@ p a:hover {
 }
 /* Project Container */
 .project-container {
-  color: #cac7c7;
+  color: #f8f8f2;
   background-color: #0a1a42;
 }
 
 .projects-description .fab.fa-github {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .project-container a {
@@ -239,13 +239,13 @@ p a:hover {
 }
 
 .photo-info p {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 /* Profile */
 
 .profile-photo a {
-  color: #c7c0c2;
+  color: #f8f8f2;
 }
 
 .profile-photo a:hover {
@@ -257,16 +257,16 @@ p a:hover {
 }
 
 .profile-intro p {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 /* 404 Page */
 .error-container h1 {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .error-container p {
-  color: #cac7c7;
+  color: #f8f8f2;
   background-color: #0a1a42;
 }
 
@@ -285,12 +285,12 @@ p a:hover {
 }
 
 .pagination a:hover {
-  background-color: #ddd;
+  background-color: #aba2a2;
 }
 
 /* archive page */
 .archive {
-  color: #cac7c7;
+  color: #f8f8f2;
   background-color: #0a1a42;
 }
 
@@ -316,7 +316,7 @@ p a:hover {
 /* blog-category */
 
 .blog-category-title {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .blog-category-list {
@@ -328,14 +328,14 @@ p a:hover {
 }
 
 .blog-category-list i {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 /* hobby */
 .hobby-title,
 .hobby h3,
 .hobby p {
-  color: #cac7c7;
+  color: #f8f8f2;
 }
 
 .hobby a {

@@ -318,7 +318,6 @@ hr {
   margin-bottom: 10px;
   border-radius: 0;
   transition: border-radius 200ms ease-in;
-  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 50%);
 }
 
 .card:hover img {
@@ -338,7 +337,7 @@ hr {
 }
 
 /* Card Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .card {
     width: 49%;
   }
@@ -727,7 +726,6 @@ iframe {
   object-fit: cover;
   border-radius: 10px;
   transition: border-radius 200ms ease-in;
-  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 50%);
 }
 
 .projects-image img:hover {
@@ -783,7 +781,6 @@ iframe {
   height: auto;
   display: block;
   transition: border-radius 200ms ease-in;
-  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 50%);
 }
 
 .photo-container img:hover {
