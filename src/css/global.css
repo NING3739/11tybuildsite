@@ -899,7 +899,6 @@ iframe {
   @media (max-width: 400px) {
     .photo-container img {
       border-radius: 10px;
-      /* width: 100%; */
       height: auto;
       display: block;
       transition: border-radius 200ms ease-in;
@@ -976,7 +975,7 @@ iframe {
   }
 
   .profile-photo img {
-    width: 70%;
+    width: 80%;
     height: auto;
     border-radius: 10px;
   }
@@ -986,6 +985,7 @@ iframe {
     padding: 30px;
   }
 }
+
 
 /* hobby */
 .hobby-title h2 {
