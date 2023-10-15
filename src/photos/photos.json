@@ -158,7 +158,70 @@
     "image": "src/assets/image/photo/2022-03-15-Whanganui-min.jpeg",
     "imageAlt": "Whanganui",
     "location": "Whanganu"
-  }
+  },
 
+  {
+    "date": "2022-06-03",
+    "categories": ["Schnapper Rock"],
+    "image": "src/assets/image/photo/2022-06-03-Schnapper-Rock-min.jpeg",
+    "imageAlt": "Schnapper Rock",
+    "location": "Schnapper Rock"
+  },
+
+  {
+   "date": "2022-12-25",
+   "categories": ["Montreal"],
+   "image": "src/assets/image/photo/2022-12-25-Montreal-mini.JPG",
+   "imageAlt": "Montreal",
+   "location": "Montreal"
+  },
+
+  {
+    "date": "2023-07-16",
+    "categories": ["Schnapper Rock"],
+    "image": "src/assets/image/photo/2023-07-16-Schnapper-Rock-mini.jpeg",
+    "imageAlt": "Schnapper Rock",
+    "location": "Schnapper Rock"
+  },
+
+  {
+    "date": "2023-07-17",
+    "categories": ["Schnapper Rock"],
+    "image": "src/assets/image/photo/2023-07-17-Schnapper-Rock-mini.jpeg",
+    "imageAlt": "Schnapper Rock",
+    "location": "Schnapper Rock"
+  },
+
+  {
+    "date": "2023-07-18",
+    "categories": ["Schnapper Rock"],
+    "image": "src/assets/image/photo/2023-07-18-Schnapper-Rock-mini.jpeg",
+    "imageAlt": "Schnapper Rock",
+    "location": "Schnapper Rock"
+  },
+
+  {
+    "date": "2023-07-28",
+    "categories": ["Schnapper Rock"],
+    "image": "src/assets/image/photo/2023-07-28-Schnapper-Rock-mini.jpeg",
+    "imageAlt": "Schnapper Rock",
+    "location": "Schnapper Rock"
+  },
+
+  {
+    "date": "2023-07-30",
+    "categories": ["Schnapper Rock"],
+    "image": "src/assets/image/photo/2023-07-30-Schnapper-Rock-mini.jpeg",
+    "imageAlt": "Schnapper Rock",
+    "location": "Schnapper Rock"
+  },
+
+  {
+    "date": "2023-09-15",
+    "categories": ["Schnapper Rock"],
+    "image": "src/assets/image/photo/2023-09-15-Schnapper-Rock-mini.jpeg",
+    "imageAlt": "Schnapper Rock",
+    "location": "Schnapper Rock"
+  }
 ]
 
