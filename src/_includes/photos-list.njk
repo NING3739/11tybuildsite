@@ -1,17 +1,27 @@
 <div class="masonry">
   {%- for photo in collections.photos | reverse -%}
     <div class="masonry-item">
-      <div class="photo-container">
-        {%- image photo.image, photo.imageAlt, {class: "img"} %}
+      <div
+        class="photo-container">
+        <!-- 锚点链接指向独特的ID -->
+        <a href="#imgModal{{ loop.index }}">
+          {%- image photo.image, photo.imageAlt, {class: "img"} %}
+        </a>
+        <!-- 模态内容，它有一个ID与锚点链接匹配 -->
+        <div id="imgModal{{ loop.index }}" class="modal-img">
+          {%- image photo.image, photo.imageAlt, {class: "img enlarged"} %}
+          <a href="#_" class="modal-close">&times;</a>
+        </div>
         <div class="photo-info">
           <p>
-            <i class="fa-solid fa-location-dot"></i>
-            &nbsp;{{ photo.location }}</p>
+            <i class="fa-solid fa-location-dot"></i>&nbsp;{{ photo.location }}</p>
           <p>
-            <i class="fa-regular fa-calendar-days"></i>
-            &nbsp;{{ photo.date | formatDate }}</p>
+            <i class="fa-regular fa-calendar-days"></i>&nbsp;{{ photo.date | formatDate }}</p>
         </div>
       </div>
     </div>
   {%- endfor %}
 </div>
+<!-- 添加背景遮罩层 -->
+<div id="backdrop" class="modal-backdrop" onclick="closeModal()"></div>
+<script src="/js/imgmodal.js"></script>

@@ -238,6 +238,12 @@ p a:hover {
   background-color: #0a1a42;
 }
 
+.modal-close {
+  background-color: #9db2bf; 
+  color: #33069e; 
+}
+
+
 .photo-info p {
   color: #f8f8f2;
 }

@@ -189,6 +189,11 @@ p a:hover {
   background-color: #c7c0c2;
 }
 
+.modal-close {
+  background-color: #cb2027; 
+  color: #fff; 
+}
+
 .photo-info p {
   color: #000;
 }
