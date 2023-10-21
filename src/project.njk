@@ -22,12 +22,12 @@ pagination:
     {%- if pagination.href.previous %}
       <a href="{{ pagination.href.previous }}" class="pagination-previous">Previous</a>
     {%- else %}
-      <a href="#" class="pagination-previous disabled">Previous</a>
+      <a>Previous</a>
     {%- endif %}
     {%- if pagination.href.next %}
       <a href="{{ pagination.href.next }}" class="pagination-next">Next</a>
     {%- else %}
-      <a href="#" class="pagination-next disabled">Next</a>
+      <a>Next</a>
     {%- endif %}
   </nav>
   <hr>
