@@ -1,17 +1,19 @@
 ---
 layout: base.njk
-permalink: /project/{{ category.slug }}/
+permalink: /project/{{ category.slug }}/index.html
 pagination:
-  data: collections.projectcategories
+  data: collections.customProjectCategories  # 更新此行以引用新集合
   size: 1
   alias: category
 eleventyComputed: 
-  title: Project entries with "{{ category.title | capitalize }}" category
+  title: Project entries with "{{ category.slug | capitalize }}" category
 ---
 
 <div class="blog-category">
   <h1 class="blog-category-title">{{ title }}</h1>
-  <ol class="blog-category-list">
+  <ol
+    class="blog-category-list">
+    {# 更新循环变量名以匹配新集合的结构 #}
     {% for project in category.projects | reverse %}
       <li>
         <a href="{{ project.url }}">{{ project.data.title }}</a>

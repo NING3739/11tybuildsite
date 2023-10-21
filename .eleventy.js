@@ -133,6 +133,27 @@ module.exports = function (eleventyConfig) {
         perPageCount: 5,
     });
 
+    eleventyConfig.addCollection("customProjectCategories", function(collectionApi) {
+        let categoriesMap = {};
+    
+        collectionApi.getAll().forEach(function(item) {
+            if (item.data.tags && item.data.tags.includes("project")) {
+                let categories = item.data.categories;
+                if (categories) {
+                    categories.forEach(categoryName => {
+                        if (!categoriesMap[categoryName]) {
+                            categoriesMap[categoryName] = { slug: categoryName, projects: [] };
+                        }
+                        categoriesMap[categoryName].projects.push(item);
+                    });
+                }
+            }
+        });
+    
+        return Object.values(categoriesMap);
+    });
+    
+
     // Setting Markdown library with custom options
     const markdownIt = require('markdown-it');
     const markdownItAttrs = require('markdown-it-attrs');
