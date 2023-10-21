@@ -3,6 +3,11 @@ title: Projects
 layout: 'base.njk'
 description: I blog about the web platform, web design and development, accessibility, product management, and artsy side quests.
     I also have a monthly “Learning Log” practice, where I collect articles I’m reading or things I’m learning.
+pagination:
+  data: collections.project
+  size: 3
+  alias: projects
+  reverse: true
 ---
 
 <div class="blog-title">
@@ -12,6 +17,19 @@ description: I blog about the web platform, web design and development, accessib
     <p>{{ description }}</p>
   </div>
   {% include 'project-list.njk' %}
+  <!-- Pagination Links -->
+  <nav class="pagination">
+    {%- if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}" class="pagination-previous">Previous</a>
+    {%- else %}
+      <a href="#" class="pagination-previous disabled">Previous</a>
+    {%- endif %}
+    {%- if pagination.href.next %}
+      <a href="{{ pagination.href.next }}" class="pagination-next">Next</a>
+    {%- else %}
+      <a href="#" class="pagination-next disabled">Next</a>
+    {%- endif %}
+  </nav>
   <hr>
     <!-- categories list -->
     <div class="categories">
