@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
     link.addEventListener('click', function () {
       // 显示背景遮罩层
       modalBackdrop.style.display = 'block';
+      // 当背景遮罩层打开后，鼠标上下滚轮停止，
+      modalBackdrop.addEventListener('mousewheel', function (event) {
+        event.preventDefault();
+      });
     });
   });
 
