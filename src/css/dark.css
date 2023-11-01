@@ -239,10 +239,9 @@ p a:hover {
 }
 
 .modal-close {
-  background-color: #9db2bf; 
-  color: #33069e; 
+  background-color: #9db2bf;
+  color: #33069e;
 }
-
 
 .photo-info p {
   color: #f8f8f2;
@@ -273,7 +272,6 @@ p a:hover {
 
 .error-container p {
   color: #f8f8f2;
-  background-color: #0a1a42;
 }
 
 .error-container a {
