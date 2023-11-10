@@ -610,6 +610,7 @@ p a {
 
 .categories ul li {
   margin-right: 10px;
+  font-weight: bold;
 }
 
 /* categories Media Queries */
