@@ -4,7 +4,7 @@ author: Kevin Powell
 date: 2021-06-20
 categories:
   - r
-  - google
+  - javascript
 image: /assets/image/blog/article-4.jpg
 imageAlt: This is a test
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
@@ -21,6 +21,7 @@ Commodo nulla facilisi nullam vehicula ipsum a. Posuere urna nec tincidunt praes
 Feugiat in ante metus dictum at. Nunc sed velit dignissim sodales. Odio aenean sed adipiscing diam donec adipiscing. Diam quam nulla porttitor massa id neque aliquam. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Elementum curabitur vitae nunc sed. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Nisi vitae suscipit tellus mauris a. Id aliquet lectus proin nibh. Tortor posuere ac ut consequat semper viverra. Nunc consequat interdum varius sit. Dictum fusce ut placerat orci. Nibh praesent tristique magna sit amet purus gravida quis. Donec ultrices tincidunt arcu non sodales neque sodales ut.
 
 # header {.style-me}
+
 paragraph {data-toggle=modal}
 
 ```table
@@ -33,27 +34,25 @@ Rank    City           Country         Population (millions)   Attractions
 5       New York City  United States   8.4                     Statue of Liberty, Times Square
 ```
 
-
 ```table
 **Bold Text**   *Italic Text*
 `Code Snippet`  [Link Text](#)
 ```
 
-|   Markdown   | Rendered HTML |
-|--------------|---------------|
-|    *Italic*  | *Italic*      | \
-|              |               |
-|    - Item 1  | - Item 1      | \
-|    - Item 2  | - Item 2      |
-|    ```python | ```python       \
-|    .1 + .2   | .1 + .2         \
-|    ```       | ```           |
+| Markdown  | Rendered HTML |
+| --------- | ------------- | --- |
+| _Italic_  | _Italic_      | \   |
+|           |               |
+| - Item 1  | - Item 1      | \   |
+| - Item 2  | - Item 2      |
+| ```python | ```python \   |
+| .1 + .2   | .1 + .2 \     |
+| ```       | ```           |
 
-
-| Rank | City           | Country       | Population (millions) | Attractions                      |
-|------|----------------|---------------|------------------------|----------------------------------|
-| 1    | Paris          | France        | 2.2                    | Eiffel Tower, Louvre Museum     |
-| 2    | Tokyo          | Japan         | 14.0                   | Tokyo Tower, Shibuya Crossing   |
-| 3    | Rome           | Italy         | 2.9                    | Colosseum, Vatican City         |
-| 4    | Sydney         | Australia     | 5.4                    | Sydney Opera House, Bondi Beach |
-| 5    | New York City  | United States | 8.4                    | Statue of Liberty, Times Square |
+| Rank | City          | Country       | Population (millions) | Attractions                     |
+| ---- | ------------- | ------------- | --------------------- | ------------------------------- |
+| 1    | Paris         | France        | 2.2                   | Eiffel Tower, Louvre Museum     |
+| 2    | Tokyo         | Japan         | 14.0                  | Tokyo Tower, Shibuya Crossing   |
+| 3    | Rome          | Italy         | 2.9                   | Colosseum, Vatican City         |
+| 4    | Sydney        | Australia     | 5.4                   | Sydney Opera House, Bondi Beach |
+| 5    | New York City | United States | 8.4                   | Statue of Liberty, Times Square |

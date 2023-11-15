@@ -6,9 +6,6 @@ tags:
   - featured
 categories:
   - 11ty
-  - html
-  - css
-  - javascript
 image: https://camo.githubusercontent.com/124e337fb005b0e70eb3758b431b051eaf5419b3a709062fbcce6d661a6ea116/68747470733a2f2f7777772e313174792e6465762f696d672f6c6f676f2d6769746875622e737667
 imageAlt: 11ty logo
 description: I will use my personal website as an example to tell you how to build a website from scratch using the 11ty static website generator. It's going to be fun!

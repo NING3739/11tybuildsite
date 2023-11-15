@@ -558,7 +558,7 @@ p a {
 .blog-title h1 {
   text-align: center;
   margin-bottom: 50px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .blog-title img,
@@ -606,6 +606,7 @@ p a {
   margin-left: 10px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .categories ul li {
@@ -620,22 +621,23 @@ p a {
   }
 
   .categories h3 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
 /* Article */
 .article {
-  margin: 30px 40px 70px 40px;
+  margin: 30px 100px 70px 100px;
 }
 
 .article p {
   line-height: 1.6;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .article-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -664,8 +666,18 @@ p a {
 }
 
 .article-date ul li {
-  margin-right: 10px;
+  margin-right: 5px;
   text-transform: capitalize;
+}
+
+@media (max-width: 431px) {
+  .article {
+    margin: 30px 40px 70px 40px;
+  }
+  .article-date,
+  .article-date ul li {
+    font-size: small;
+  }
 }
 
 /* iframe */
@@ -709,6 +721,12 @@ iframe {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "AlimamaAgileVF-Thin";
+}
+
+.projects-description i {
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .projects-description p {
@@ -1096,8 +1114,9 @@ iframe {
 .archive-list {
   height: 100vh;
   padding: 20px;
-  display: flex;
+  display: grid;
   justify-content: space-around;
+  align-items: center;
 }
 
 .archive-list h2 {
@@ -1125,6 +1144,12 @@ iframe {
     display: grid;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 431px) {
+  li::marker {
+    font-size: 1rem;
   }
 }
 
@@ -1156,7 +1181,7 @@ iframe {
   justify-content: start;
   height: 8vh;
   align-items: first baseline;
-  margin: 30px 40px 0 40px;
+  margin: 30px 100px 0 100px;
 }
 
 #share-buttons i {
@@ -1204,6 +1229,12 @@ iframe {
   opacity: 0.9;
 }
 
+@media (max-width: 431px) {
+  #share-buttons {
+    margin: 30px 40px 70px 40px;
+  }
+}
+
 /* blog-category */
 .blog-category {
   display: grid;
@@ -1221,7 +1252,6 @@ iframe {
   padding: 20px;
   text-transform: capitalize;
   height: 100vh;
-  margin: 30px;
   padding: 30px;
   border-radius: 34% 60% 42% 72%/71% 40% 60% 40%;
 }
@@ -1246,6 +1276,12 @@ iframe {
 
   .blog-category-list li {
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 431px) {
+  .blog-category-list {
+    font-size: small;
   }
 }
 

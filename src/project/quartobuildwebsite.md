@@ -2,8 +2,6 @@
 title: Quarto Build Website
 date: 2023-04-14
 categories:
-  - html
-  - css
   - quarto
 image: https://posit.co/wp-content/uploads/2022/10/thumbnail-2.jpg
 imageAlt: Quarto

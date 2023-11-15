@@ -2,9 +2,6 @@
 title: Astro Build Website
 date: 2023-10-14
 categories:
-  - html
-  - css
-  - javascript
   - astro
 image: /assets/image/blog/astro.avif
 imageAlt: Astro

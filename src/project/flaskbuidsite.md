@@ -2,9 +2,6 @@
 title: Flask Build Website
 date: 2023-10-16
 categories:
-  - html
-  - css
-  - javascript
   - flask
   - python
 image: https://vercel.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F6Dqa9T8XOOC95yJb0z9jew%2Fce4932b8d23046f260510e24c1ec39e1%2Fthumbnail.png&w=1920&q=75&dpl=dpl_2Kb9YiuAparKc71U7BxyAtH9LLYP
