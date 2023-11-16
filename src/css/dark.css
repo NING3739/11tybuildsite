@@ -218,6 +218,11 @@ p a:hover {
 .article-date a {
   color: #47ab18;
 }
+
+.article-pagination a {
+  color: white;
+}
+
 /* Project Container */
 .project-container {
   color: #f8f8f2;

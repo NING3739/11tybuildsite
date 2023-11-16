@@ -179,6 +179,11 @@ p a:hover {
   color: #000;
 }
 
+/* Article */
+.article-pagination a {
+  color: black;
+}
+
 /* Project Container */
 .project-container {
   background-color: #f9d5d5;
@@ -190,8 +195,8 @@ p a:hover {
 }
 
 .modal-close {
-  background-color: #cb2027; 
-  color: #fff; 
+  background-color: #cb2027;
+  color: #fff;
 }
 
 .photo-info p {

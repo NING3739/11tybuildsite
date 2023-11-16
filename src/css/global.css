@@ -334,6 +334,7 @@ hr {
 .card p {
   font-size: 14px;
   margin-top: 10px;
+  text-align: left;
 }
 
 /* Card Media Queries */
@@ -614,6 +615,9 @@ p a {
   font-weight: bold;
 }
 
+.categories a {
+  text-decoration: none;
+}
 /* categories Media Queries */
 @media (max-width: 768px) {
   .categories {
@@ -670,8 +674,24 @@ p a {
   text-transform: capitalize;
 }
 
+.article-pagination {
+  margin: 30px 100px 70px 100px;
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+}
+
+.article-pagination a {
+  text-decoration: none;
+}
+
+.article-pagination a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 431px) {
-  .article {
+  .article,
+  .article-pagination {
     margin: 30px 40px 70px 40px;
   }
   .article-date,
@@ -725,12 +745,15 @@ iframe {
 
 .projects-description i {
   text-transform: capitalize;
-  text-decoration: underline;
   font-weight: bold;
 }
 
 .projects-description p {
   margin-top: 20px;
+}
+
+.projects-description a {
+  text-decoration: underline;
 }
 
 .projects-image {
@@ -1127,6 +1150,7 @@ iframe {
 .archive a {
   font-weight: bold;
   font-family: "AlimamaAgileVF-Thin";
+  text-decoration: none;
 }
 
 .archive-project-list h2,
@@ -1266,6 +1290,10 @@ iframe {
 
 .blog-category-list i {
   text-transform: capitalize;
+}
+
+.blog-category-list a {
+  text-decoration: none;
 }
 
 /* blog category Media Queries */

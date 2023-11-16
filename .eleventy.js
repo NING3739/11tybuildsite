@@ -43,10 +43,10 @@ function formatDate(dateString) {
 
 // Function to generate image elements with different resolutions and formats
 async function generateImage(src, alt, options) {
-    if(!src) {
+    if (!src) {
         throw new Error(`Missing \`src\` on image shortcode.`);
     }
-    if(alt === undefined) {
+    if (alt === undefined) {
         throw new Error(`Missing \`alt\` on image from: ${src}`);
     }
 
@@ -80,8 +80,8 @@ async function generateImage(src, alt, options) {
 
     return `<picture>
         ${Object.values(stats).map(imageFormat => {
-            return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => `${entry.url} ${entry.width}w`).join(", ")}" sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw">`;
-        }).join("\n")}
+        return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => `${entry.url} ${entry.width}w`).join(", ")}" sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw">`;
+    }).join("\n")}
             <img
             src="${lowestSrc.url}"
             width="${lowestSrc.width}"
@@ -133,10 +133,10 @@ module.exports = function (eleventyConfig) {
         perPageCount: 5,
     });
 
-    eleventyConfig.addCollection("customProjectCategories", function(collectionApi) {
+    eleventyConfig.addCollection("customProjectCategories", function (collectionApi) {
         let categoriesMap = {};
-    
-        collectionApi.getAll().forEach(function(item) {
+
+        collectionApi.getAll().forEach(function (item) {
             if (item.data.tags && item.data.tags.includes("project")) {
                 let categories = item.data.categories;
                 if (categories) {
@@ -149,10 +149,10 @@ module.exports = function (eleventyConfig) {
                 }
             }
         });
-    
+
         return Object.values(categoriesMap);
     });
-    
+
 
     // Setting Markdown library with custom options
     const markdownIt = require('markdown-it');
@@ -162,10 +162,10 @@ module.exports = function (eleventyConfig) {
     const markdownItMultimdTable = require('markdown-it-multimd-table');
     const markdownItOptions = { html: true, breaks: true, linkify: true };
     const markdownLib = markdownIt(markdownItOptions)
-      .use(markdownItAttrs)
-      .use(markdownItAnchor)
-      .use(markdownItEasyTables)
-      .use(markdownItMultimdTable);
+        .use(markdownItAttrs)
+        .use(markdownItAnchor)
+        .use(markdownItEasyTables)
+        .use(markdownItMultimdTable);
     eleventyConfig.setLibrary('md', markdownLib);
 
     // Adding Mermaid plugin with custom configurations
