@@ -1,7 +1,7 @@
 // Importing required modules
 const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
-
+const readingTime = require('eleventy-plugin-reading-time');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const dynamicCategories = require("eleventy-plugin-dynamic-categories");
 const pluginMermaid = require("@kevingimbel/eleventy-plugin-mermaid");
@@ -117,6 +117,7 @@ module.exports = function (eleventyConfig) {
     // Adding plugins
     eleventyConfig.addPlugin(pluginInlineLinkFavicon);
     eleventyConfig.addPlugin(syntaxHighlight);
+    eleventyConfig.addPlugin(readingTime);
 
     // Adding dynamic categories plugin configurations
     eleventyConfig.addPlugin(dynamicCategories, {

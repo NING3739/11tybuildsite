@@ -5,7 +5,7 @@ layout: 'base.njk'
 <article class="article">
   <h1 class="article-title">{{ title }}</h1>
   <h4 class="article-date">
-    <i>{{ date | postDate }}</i>
+    <i>Published on {{ date | postDate }} -- {{ content | readingTime }} read</i>
     <ul>
       {% for categories in categories %}
         <li>
@@ -20,8 +20,9 @@ layout: 'base.njk'
 {% include 'share-link.njk' %}
 <!-- Back to Top Button -->
 {% include 'back-to-top.njk' %}
-<hr>
+<hr class="horizontal-line">
   {% include 'project-article-pagination.njk' %}
-  <hr>
+  <hr
+    class="horizontal-line">
     <!--Giscus Commenting System -->
     {% include 'comment-system.njk' %}

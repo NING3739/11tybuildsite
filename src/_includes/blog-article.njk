@@ -5,7 +5,7 @@ layout: 'base.njk'
 <article class="article">
   <h1 class="article-title">{{ title }}</h1>
   <h4 class="article-date">
-    <i>{{ date | postDate }}</i>
+    <i>Published on {{ date | postDate }} -- {{ content | readingTime }} read</i>
     <ul>
       {% for categories in categories %}
         <li>
@@ -14,15 +14,16 @@ layout: 'base.njk'
       {% endfor %}
     </ul>
   </h4>
-  {{ content | safe }}
-</article>
-<!-- Share Links -->
-{% include 'share-link.njk' %}
-<!--blog article pagination -->
-<!-- Back to Top Button -->
-{% include 'back-to-top.njk' %}
-  <hr>
-  {% include 'blog-article-pagination.njk' %}
-    <hr>
-    <!--Giscus Commenting System -->
-    {% include 'comment-system.njk' %}
+  <img class="front-img" src="{{ image }}" alt="{{ imageAlt }}">
+    {{ content | safe }}
+  </article>
+  <!-- Share Links -->
+  {% include 'share-link.njk' %}
+  <!--blog article pagination -->
+  <!-- Back to Top Button -->
+  {% include 'back-to-top.njk' %}
+    <hr class="horizontal-line"> {% include 'blog-article-pagination.njk' %}
+    <hr
+      class="horizontal-line">
+      <!--Giscus Commenting System -->
+      {% include 'comment-system.njk' %}
