@@ -4,8 +4,9 @@ layout: 'base.njk'
 
 <article class="article">
   <h1 class="article-title">{{ title }}</h1>
+  <p class="article-description">{{ description }}</p>
   <h4 class="article-date">
-    <i>Published on {{ date | postDate }} -- {{ content | readingTime }} read</i>
+    <i>Published on {{ date | postDate }} • 🍿 {{ content | readingTime }}. read</i>
     <ul>
       {% for categories in categories %}
         <li>

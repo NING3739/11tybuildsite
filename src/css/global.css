@@ -637,6 +637,14 @@ p a {
 .article p {
   line-height: 1.6;
   margin-bottom: 20px;
+  font-family: "Roboto Slab", serif;
+}
+
+.article-description {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .front-img {
@@ -681,6 +689,14 @@ p a {
 .article-date ul li {
   margin-right: 5px;
   text-transform: capitalize;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 0;
+  padding: 1em 10px 0.1em;
+  border-radius: 5px;
 }
 
 .article-pagination {

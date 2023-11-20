@@ -180,8 +180,18 @@ p a:hover {
 }
 
 /* Article */
+.article-description,
+.article-date i {
+  color: #757575;
+}
+
 .article-pagination a {
   color: black;
+}
+
+blockquote {
+  background: #adbac7;
+  border-left: 10px solid #636e7b;
 }
 
 /* Project Container */

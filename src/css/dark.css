@@ -215,12 +215,22 @@ p a:hover {
   color: #f8f8f2;
 }
 
+.article-description,
+.article-date i {
+  color: #a5b9c6;
+}
+
 .article-date a {
   color: #47ab18;
 }
 
 .article-pagination a {
   color: white;
+}
+
+blockquote {
+  background: #636e7b;
+  border-left: 10px solid #adbac7;
 }
 
 /* Project Container */
