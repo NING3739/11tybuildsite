@@ -229,8 +229,8 @@ p a:hover {
 }
 
 blockquote {
-  background: #636e7b;
-  border-left: 10px solid #adbac7;
+  background: #000;
+  border-left: 10px solid #f2f2f2;
 }
 
 /* Project Container */

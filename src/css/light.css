@@ -190,8 +190,8 @@ p a:hover {
 }
 
 blockquote {
-  background: #adbac7;
-  border-left: 10px solid #636e7b;
+  background: white;
+  border-left: 10px solid #999;
 }
 
 /* Project Container */
