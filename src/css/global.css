@@ -644,7 +644,10 @@ p a {
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-size: 15px;
-  font-weight: bold;
+  padding: 20px;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 34% 60% 42% 72%/71% 40% 60% 40%;
 }
 
 .front-img {

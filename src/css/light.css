@@ -180,7 +180,11 @@ p a:hover {
 }
 
 /* Article */
-.article-description,
+
+.article-description {
+  background-color: #f3d9e7;
+}
+
 .article-date i {
   color: #757575;
 }

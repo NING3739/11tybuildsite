@@ -215,7 +215,10 @@ p a:hover {
   color: #f8f8f2;
 }
 
-.article-description,
+.article-description {
+  background-color: #2051ab;
+}
+
 .article-date i {
   color: #a5b9c6;
 }
