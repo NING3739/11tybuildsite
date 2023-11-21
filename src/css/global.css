@@ -652,7 +652,7 @@ p a {
 
 .front-img {
   width: 100%;
-  max-height: 500px;
+  max-height: 550px;
   border-radius: 5px;
   object-fit: cover;
   margin-bottom: 30px;

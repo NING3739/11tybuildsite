@@ -24,10 +24,9 @@
   },
 
   {
-
     "date": "2019-07-14",
     "categories": ["Taupo"],
-    "image": "src/assets/image/photo/2019-07-14-Taupo-min.jpeg", 
+    "image": "src/assets/image/photo/2019-07-14-Taupo-min.jpeg",
     "imageAlt": "Taupo",
     "location": "Taupo"
   },
@@ -106,7 +105,7 @@
 
   {
     "date": "2022-01-03",
-    "categories": ["Waipu"],  
+    "categories": ["Waipu"],
     "image": "src/assets/image/photo/2022-01-03-Waipu-min.jpeg",
     "imageAlt": "Waipu",
     "location": "Waipu"
@@ -166,14 +165,6 @@
     "image": "src/assets/image/photo/2022-06-03-Schnapper-Rock-min.jpeg",
     "imageAlt": "Schnapper Rock",
     "location": "Schnapper Rock"
-  },
-
-  {
-   "date": "2022-12-25",
-   "categories": ["Montreal"],
-   "image": "src/assets/image/photo/2022-12-25-Montreal-mini.JPG",
-   "imageAlt": "Montreal",
-   "location": "Montreal"
   },
 
   {
