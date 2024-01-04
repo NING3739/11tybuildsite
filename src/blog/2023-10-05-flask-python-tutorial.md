@@ -7,7 +7,7 @@ tags:
 categories:
   - flask
   - python
-image: /assets/image/project/flask.svg
+image: /assets/image/project/flask.avif
 imageAlt: flask-logo
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
 ---

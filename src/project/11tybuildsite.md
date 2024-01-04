@@ -3,7 +3,7 @@ title: A stylish static website crafted with Eleventy(11ty)
 date: 2023-09-11
 categories:
   - 11ty
-image: https://camo.githubusercontent.com/124e337fb005b0e70eb3758b431b051eaf5419b3a709062fbcce6d661a6ea116/68747470733a2f2f7777772e313174792e6465762f696d672f6c6f676f2d6769746875622e737667
+image: /assets/image/blog/11ty.jpeg
 imageAlt: 11ty
 description: A user-friendly website created with Eleventy(11ty) is optimized for desktop(27') and mobile, boasting a responsive design. It features a convenient "back-to-top" function and offers both light and dark mode themes. The blog posts are nearly categorized using keywords for easy navigation.
 github: https://github.com/NING3739/11tybuildsite
