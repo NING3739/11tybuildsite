@@ -17,3 +17,5 @@ public
 
 #image render cache
 .cache
+*.xml
+*.iml
