@@ -221,5 +221,13 @@
     "image": "src/assets/image/photo/2023-11-01-Schnapper-Rock-mini.jpeg",
     "imageAlt": "Schnapper Rock",
     "location": "Schnapper Rock"
+  },
+
+  {
+    "date": "2023-11-01",
+    "categories": ["Schnapper Rock"],
+    "image": "src/assets/image/photo/2024-03-03-Albany.jpeg",
+    "imageAlt": "Schnapper Rock",
+    "location": "Schnapper Rock"
   }
 ]
